@@ -1,0 +1,27 @@
+#PHÂN CÔNG
+  Thành viên nhóm: 
+      + Phạm Trung Sơn: 1312495 - pts.seiryu95@gmail.com. Nhóm trưởng.
+      + Nguyễn Thái Sơn: 1312494 - thaisonnguyen8295@gmail.com .
+      + Nguyễn Quốc Thái: 1312542 - nguyenquocthai.hcmus@gmail.com .
+      
+  Phân công:
+      + Giai đoạn 1: Định hướng cho đồ án: chịu trách nhiệm chính Phạm Trung Sơn.                                   Deadline 29/05/2016
+          Đặc tả yêu cầu và bảng phân công công việc.
+      + Giai đoạn 2: Tùy chỉnh giao diện: chịu trách nhiệm chính Nguyễn Thái Sơn, Nguyễn Quốc Thái.                 Deadline 01/06/2016
+          Tìm kiếm teamplate phù hợp.
+          Chỉnh sữa teamplate phù hợp với đích của website.
+          Đánh dấu lại các trường dữ liệu của data để thiết kế dữ liệu.
+          Hỗ trợ load google map địa điểm quán ăn.
+      + Giao đoạn 3: Chuẫn bị dữ liệu: chịu trách nhiệm chính Nguyễn Quốc Thái, Nguyễn Thái Sơn.                    Deadline 04/06/2016
+          Thiết kế dữ liệu dựa vào giao diện.
+          Update dữ liệu lên firebase.
+          Load dữ liệu vào giao diện.
+      + Giao đoạn 4: Cho phép hỗ trợ đăng nhập: chịu trách nhiệm chính Phạm Trung Sơn.                              Deadline 08/06/2016
+          Dùng Firebase để hỗ trợ đăng nhập.
+          Hỗ trợ đăng nhập từ các mạng xã hội nổi tiếng: Facebook, Twitter, Google.
+          In các thông tin chính của người dùng để xác minh đăng nhập.
+      + Giao đoạn 5: Test và bug: chịu trách nhiệm chính: cả nhóm.
+          Test và chỉnh sửa lỗi.
+          
+            
+                    
