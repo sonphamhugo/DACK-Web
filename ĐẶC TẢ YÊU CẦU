@@ -1,0 +1,52 @@
+#ĐẶC TẢ YÊU CẦU:
+    - Tên đề tài: Website Đặt cơm văn phòng.
+    
+    - Mô tả: xây dựng một hệ thống “Đặt cơm văn phòng” để có thể hỗ trợ việc gọi thức ăn tại bàn hoặc việc giao cơm văn phòng
+      của 1 cửa quán ăn. Việc này sẽ rất tiết kiệm về thời gian và sẽ không bị nhầm lẫn trong quá trìnhorder thức ăn.
+      Bạn không phải đứng chờ chen lấn hay xếp hàng chỉ để gọi món, không phải chờ đợi mãi mới có thể order được món,
+      hay cảm giác không hài lòng khi phục vụ đem sai món, hay những rắc rối khi phải thối tiền,… “Đặt cơm văn phòng” 
+      sẽ giải quyết được mọi thứ khi bạn cho cúng tôi biết bạn là ai (yêu cầu một tài khoản uy tín) và bạn muốn ăn món gì, ở đâu.
+      
+   - Chức năng: 
+      + Chủ quán ăn có thể đăng tải món ăn mới, chỉnh sửa và xóa món ăn mới.
+      + Khách hàng có thể xem các món ăn hiện có của quán ăn.
+      + Khách hàng co thể đưa món ăn vào giỏ hàng và tiến hành đặt hàng.
+      + Yêu cầu bắt buộc là phải đăng nhập và nhập địa chỉ số điện thoại lại cho quán ăn.
+      + Xem chi tiết thông tin liên lạc với quán ăn.
+      
+    -Đối tượng phân quyền:
+      + Khách hàng chưa đăng nhập: được phép xem các món ăn, thông tin quán ăn.
+      + Khách hàng đã đăng nhập: có các quyền của khách hàng chưa đăng nhập và co thêm quyền đặt hàng danh sách món ăn.
+      + Chủ cửa hàng có quyền có quyền nhập liệu chỉnh sửa dữ liệu món ăn trong quán của mình.
+      
+    - Mục tiêu:
+      + Giao diện: Tiện dụng, dễ dàng thao tác, màu sắc hài hòa có khả năng hỗ trợ việc đặt món ăn nhanh nhất.
+      + Xử lý: Chính xác, nhanh. Hỗ trợ đăng nhập từ các mạng xã hội phổ biến.
+      + Dữ liệu: dùng cấu trúc json để lưu trữ và xử lý dữ liệu. Dùng Firebase để lưu trữ dữ liệu.
+      
+    -Tiềm năng kinh tế:
+      + Các chủ quán ăn có thể có được số lượng đơn đặt hàng chỉ cần đăng ký với hệ thống.
+      + Các món ăn được trang trí và quản cáo một cách tốt nhất cho cửa hàng của mình.
+      + Khách hàng sẽ nhanh chóng chọn món ăn mình thích. Và sẽ rất thích thú trong việc chọn lựa món ăn.
+      + Sẽ không tốn quá nhiều thời gian cho việc đặt món ăn và có thể sai xót trong qua trình giao tiếp.
+      
+      
+    - Khả năng mở rộng: 
+      ***Hệ thống có thể mở rộng quy mô khi có nhiều cửa hàng tham gia hệ thống
+        + Khi đó bạn có thể gọi món ăn ở bất kỳ đâu.
+        của hệ thống chúng tôi sẽ gợi ý cho bạn chọn lựa cửa tiệm phù hợp nhất về địa điểm và thời gian. 
+        + Không chỉ có hệ thống lớn như KFC, Lotte mới có thể giao hàng trên khắp thành phố. Bạn vẫn có thê gọi các món 
+        bình dân đến tận phòng. Bạn đang ở trường nhưng vẫn có thể gọi một ly trà sữa mát lạnh, ly coffe để tỉnh táo.
+        + Các cửa tiệm có hỗ trợ nhau cho nhu cầu khách hàng: bạn muốn ăn cơm và người khác muốn ăn phở -> bạn không thể đến tiệm cơm
+        để gọi món phở hay ngược lại đến tiệm phở để gọi cơm. Hệ thống có thể giao hàng cả phở và chỉ sau một cú click chuột.
+        
+      ***Với việc nâng cao mức độ thông minh của hệ thống
+        + Hệ thống có thể gợi ý các món ăn và cửa hàng xung quan vị trí hinệ tại cửa bạn.
+        + Cho phép chủ cửa hàng có thể tùy chỉnh phạm vi giao hàng của cửa tiệm tùy vào nội lực của từng cửa hàng.
+        + Khách hàng sẽ được gợi ý nhiều món đặt trưng của các quán trong khu vực dựa vào các bình luận, đánh giá của mọi người.
+        
+        ______________________________The End _____________________________
+      
+      
+      
+      
