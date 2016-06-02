@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+     <title>Contacts</title>
+     <meta charset="utf-8">
+     <link rel="icon" href="images/favicon.ico">
+     <link rel="shortcut icon" href="images/favicon.ico" />
+     <link rel="stylesheet" href="css/form.css">
+     <link rel="stylesheet" href="css/style.css">
+     <script src="js/jquery.js"></script>
+     <script src="js/jquery-migrate-1.1.1.js"></script>
+     <script src="js/jquery.equalheights.js"></script>
+     <script src="js/jquery.ui.totop.js"></script>
+     <script src="js/TMForm.js"></script>
+     <script src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYWP2aXqfRh1BgyUWZA86NlbEvkDmcTbQ&amp;sensor=false"></script>
+     <script>
+        $(document).ready(function(){
+
+          $().UItoTop({ easingType: 'easeOutQuart' });
+        }) 
+     </script>
+     <!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+         </a>
+
+    <![endif]-->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <link rel="stylesheet" media="screen" href="css/ie.css">
+    <![endif]-->
+    <!--[if lt IE 10]>
+      <script src="js/html5shiv.js"></script>
+      <link rel="stylesheet" media="screen" href="css/ie1.css">
+    <![endif]-->
+    
+     </head>
+     <body  class="">
+
+<!--==============================header=================================-->
+  <header> 
+  <div class="container_12">
+   <div class="grid_12"> 
+    <div class="socials">
+      <a href="#"></a>
+      <a href="#"></a>
+      <a href="#"></a>
+    </div>
+    <h1><a href="index.html"><img src="images/logo.png" alt="Boo House"></a> </h1>
+    <div class="menu_block">
+
+
+    <nav id="bt-menu" class="bt-menu">
+        <a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+        <ul>
+          <li class="bt-icon"><a href="index.html">Trang chủ</a></li>
+         <li class="bt-icon"><a href="index_menu.html">Thực đơn</a></li>
+         
+         <li class="bt-icon"><a href="index_reservation.html">Đặt món</a></li>
+         <li class="current bt-icon "><a href="index_contact.html">Liên hệ</a></li>
+        </ul>
+      </nav>
+    
+ <div class="clear"></div>
+</div>
+<div class="clear"></div>
+          </div>
+      </div>
+</header>
+
+<!--==============================Content=================================-->
+
+<div class="content contact">
+  <div class="container_12">
+      <div class="grid_12">
+        <div id="map"></div>
+      </div>
+      <div class="clear"></div>
+      <div class="grid_4">
+        <h3 class="head3">Địa chỉ</h3>
+              <div class="map">
+
+
+                <address>
+                              <dl>
+                                  <dt>Quán cơm: <br>
+                                  mydata.contact.address
+                                  </dt>
+                                  <dd><span>Điện thoại:</span>mydata.contact.phone</dd>
+                                  <dd><span>Di động:</span>mydata.contact.cellphone</dd>
+                                  <dd>E-mail: <a href="#" class="col2">mydata.contact.email</a></dd>
+                                  <dd>Facebook: <a href="#" class="col2">mydata.contact.facebook</a></dd>                              </dl>
+                           </address>
+                           <p> mydata.contact.description</p>
+            </div>
+      </div>
+      <div class="grid_8">
+        <h3 class="head3">Mẫu liên hệ</h3>
+              <form id="form">
+                              
+                        <div class="success_wrapper">
+                        <div class="success-message">Contact form submitted</div>
+                        </div>
+                        <label class="name">
+                        <input type="text" placeholder="Tên:" data-constraints="@Required @JustLetters" />
+                        <span class="empty-message">*This field is required.</span>
+                        <span class="error-message">*This is not a valid name.</span>
+                        </label>
+                      
+                        <label class="email">
+                        <input type="text" placeholder="E-mail:" data-constraints="@Required @Email" />
+                        <span class="empty-message">*This field is required.</span>
+                        <span class="error-message">*This is not a valid email.</span>
+                        </label>
+                         <label class="phone">
+                            <input type="text" placeholder="Điện Thoại:" data-constraints="@Required @JustNumbers"/>
+                            <span class="empty-message">*This field is required.</span>
+                            <span class="error-message">*This is not a valid phone.</span>
+                            </label>
+                        <label class="message">
+                        <textarea placeholder="Tin nhắn:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+                        <span class="empty-message">*This field is required.</span>
+                        <span class="error-message">*The message is too short.</span>
+                        </label>
+                        <div>
+                        <div class="clear"></div>
+                        <div class="btns">
+                        <a href="#" data-type="reset" class="btn">Xoá</a>
+                        <a href="#" data-type="submit" class="btn">Gởi</a></div>
+                        </div>
+                        </form>   
+      </div>
+  </div>
+</div>
+
+<!--==============================footer=================================-->
+
+<footer>    
+  <div class="container_12">
+    <div class="grid_6 prefix_3">
+      <a href="index.html" class="f_logo"><img src="images/f_logo.png" alt=""></a>
+      <div class="copy">
+      &copy; 2016 | Privacy Policy <br> Trang web thiết kế bởi <a href="https://www.facebook.com/ThaiNguyen1708" rel="nofollow">Deadline Team</a>
+      </div>
+    </div>
+  </div>
+</footer>
+       <script>
+      $(document).ready(function(){ 
+         $(".bt-menu-trigger").toggle( 
+          function(){
+            $('.bt-menu').addClass('bt-menu-open'); 
+          }, 
+          function(){
+            $('.bt-menu').removeClass('bt-menu-open'); 
+          } 
+        ); 
+      }) 
+    </script>
+     <script src="js/map.js"></script>
+</body>
+
+</html>
