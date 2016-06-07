@@ -781,7 +781,7 @@ footer a:hover {
     color: rgb(51, 51, 51);
     height: 105px;
     max-width: 100%;
-    width: 940px;
+    width: 100%;
     perspective-origin: 470px 52.5px;
     transform-origin: 470px 52.5px;
     background: rgb(223, 223, 221) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -876,6 +876,25 @@ footer a:hover {
 }/*#TH_6*/
 
 #TH_7 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    height: 34px;
+    vertical-align: middle;
+    width: 118px;
+    perspective-origin: 59px 17px;
+    transform-origin: 59px 17px;
+    background: rgb(238, 238, 238) none repeat scroll 0% 0% / auto padding-box border-box;
+    border-top: 0px none rgb(51, 51, 51);
+    border-right: 0px none rgb(51, 51, 51);
+    border-bottom: 0px solid rgb(221, 221, 221);
+    border-left: 0px none rgb(51, 51, 51);
+    border-spacing: 1px 1px;
+    font: normal normal bold normal 13px / 18.5714px Arial;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 8px;
+}/*#TH_7*/
+
+#TH_8 {
     box-sizing: border-box;
     color: rgb(51, 51, 51);
     height: 34px;
@@ -992,7 +1011,8 @@ footer a:hover {
     text-align: left;
     border: 0px none rgb(102, 102, 102);
     border-spacing: 1px 1px;
-    font: normal normal bold normal 13px / 18.5714px Arial;
+    margin-top: 15px;
+    font: normal normal bold normal 18px / 28.5714px Arial;
     outline: rgb(102, 102, 102) none 0px;
 }/*#STRONG_14*/
 
@@ -1102,6 +1122,25 @@ footer a:hover {
     padding: 8px;
 }/*#TD_22*/
 
+
+
+#TD_23 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    height: 68px;
+    text-align: center;
+    vertical-align: middle;
+    width: 118px;
+    perspective-origin: 59px 34px;
+    transform-origin: 59px 34px;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 0px none rgb(51, 51, 51);
+    border-spacing: 1px 1px;
+    font: normal normal normal normal 13px / 18.5714px Arial;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 8px;
+}/*#TD_22*/
+
 #DIV_1 {
     box-sizing: border-box;
     color: rgb(102, 102, 102);
@@ -1191,4 +1230,55 @@ footer a:hover {
     margin-right: 20px;
 }/*#A_1*/
 
+
+
+
+table{
+	width: 100%;
+	height: 90%;
+}
+
+
+.content_input{
+	max-width: 100%;
+	width: 400px;
+	padding-left: 36%;
+	padding-top: 20px;
+	height:200px;
+}
+
+
+
+select{ 
+	float:left;
+	width:100%;
+	height: 100%;
+	min-height: 30px;
+	margin: auto;
+}
+
+#btnAddFood{
+	/*height: 28px;
+	background: #B2FF59;*/
+}
+
+
+.form_input input{
+	height: 25px;
+	width: 100%;
+    float: left;
+}
+
+.foodType input{
+
+	width:20px;
+}
+
+#img_preview{
+
+	height: 100px;
+	width: 100px;
+	float: right;
+
+}
 
