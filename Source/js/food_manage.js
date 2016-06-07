@@ -35,6 +35,7 @@ app.controller("FoodManageCtrl", function($scope, $firebaseArray) {
      $scope.typeBreakfast = foodItem.breakfast;
      $scope.typeLunch = foodItem.luch;
      $scope.typeDinner = foodItem.dinner;
+     $scope.foodDetail = foodItem.detail;
      $scope.isSale = foodItem.isSale;
 
   }
@@ -55,7 +56,7 @@ app.controller("FoodManageCtrl", function($scope, $firebaseArray) {
   //Kiểm tra dữ liệu đầu vào.
   $scope.isValidInput = function(){
     //Nếu có bất kì trường nào trống thì fail.
-    if($scope.foodImage == "" || $scope.foodPrice== "" ||$scope.foodName==""){
+    if($scope.foodImage == "" || $scope.foodPrice== "" || $scope.foodDetail== "" ||$scope.foodName==""){
       return false;
     }
 
@@ -134,7 +135,7 @@ app.controller("FoodManageCtrl", function($scope, $firebaseArray) {
        luch: $scope.typeLunch,
        dinner: $scope.typeDinner,
        isSale: $scope.isSale,
-
+       detail: $scope.foodDetail,
        foodImage: $scope.foodImage
      },onComplete);
 
@@ -144,6 +145,7 @@ app.controller("FoodManageCtrl", function($scope, $firebaseArray) {
     $scope.foodName = "";
     //$scope.foodType = "";
     $scope.foodImage = "";
+    $scope.foodDetail = "";
   }
 
   // putting a console.log here won't work, see below

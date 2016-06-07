@@ -32,7 +32,7 @@ text-decoration:none;
 body {
 	font: 14px/20px  Arial, Helvetica, sans-serif;
 	color:#5f5e4e;
-	background-color: #B2FF59;
+	background-color: #ACCFCC;
 	position:relative;
 	min-width:960px;
 }
@@ -261,14 +261,14 @@ h1 a img {
 	display: inline-block;
 	width: 43px;
 	height: 43px;
-	  color: #B2FF59;
+	  color: #ACCFCC;
 	  font: 24px/43px FontAwesome;
 }
 
 .socials a:first-child:after {
 	  content: '';
 	  font: 24px/43px FontAwesome;
-	  color: #B2FF59;
+	  color: #ACCFCC;
 	  width: 43px;
 	  height: 43px;
 	  text-align: center;
@@ -1058,7 +1058,7 @@ footer a:hover {
     outline: rgb(210, 0, 0) none 0px;
 }/*#SPAN_18, #SPAN_23*/
 
-#TD_19 {
+#TD_19 ,#TD_18{
     box-sizing: border-box;
     color: rgb(51, 51, 51);
     height: 68px;
@@ -1244,7 +1244,7 @@ table{
 	width: 400px;
 	padding-left: 36%;
 	padding-top: 20px;
-	height:200px;
+	height:250px;
 }
 
 
@@ -1268,6 +1268,10 @@ select{
 	width: 100%;
     float: left;
 }
+#foodDetail, #rowFoodDetail{
+	height: 70px;
+	width: 100%;
+}
 
 .foodType input{
 
@@ -1282,3 +1286,6 @@ select{
 
 }
 
+#ft{
+    font-size: 19.3px !important;
+}

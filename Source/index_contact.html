@@ -12,6 +12,22 @@
      <script src="js/jquery.equalheights.js"></script>
      <script src="js/jquery.ui.totop.js"></script>
      <script src="js/TMForm.js"></script>
+
+
+
+
+     <!-- AngularJS -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+<!-- Firebase -->
+<script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+<!-- AngularFire -->
+<script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
+
+
+    <!-- Firsebase Manage Food -->     
+     <script src="js/contact.js"></script>
+
+
      <script src="js/jquery.easing.1.3.js"></script>
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYWP2aXqfRh1BgyUWZA86NlbEvkDmcTbQ&amp;sensor=false"></script>
      <script>
@@ -72,7 +88,7 @@
 
 <!--==============================Content=================================-->
 
-<div class="content contact">
+<div class="content contact" ng-app="Food_Order" ng-controller="ContactCtrl">
   <div class="container_12">
       <div class="grid_12">
         <div id="map"></div>
@@ -85,15 +101,14 @@
 
                 <address>
                               <dl>
-                                  <dt>Quán cơm: <br>
-                                  mydata.contact.address
+                                  <dt>Quán cơm:<span >{{contact.address}}</span> <br> 
                                   </dt>
-                                  <dd><span>Điện thoại:</span>mydata.contact.phone</dd>
-                                  <dd><span>Di động:</span>mydata.contact.cellphone</dd>
-                                  <dd>E-mail: <a href="#" class="col2">mydata.contact.email</a></dd>
-                                  <dd>Facebook: <a href="#" class="col2">mydata.contact.facebook</a></dd>                              </dl>
+                                  <dd><span>Điện thoại:</span>{{contact.phone}}</dd>
+                                  <dd><span>Di động:</span>{{contact.cellphone}}</dd>
+                                  <dd>E-mail: <a href="#" class="col2">{{contact.email}}</a></dd>
+                                  <dd>Facebook: <a href="#" class="col2">{{contact.facebook}}</a></dd>                              </dl>
                            </address>
-                           <p> mydata.contact.description</p>
+                           <p> {{contact.description}}</p>
             </div>
       </div>
       <div class="grid_8">

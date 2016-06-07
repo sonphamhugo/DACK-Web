@@ -97,11 +97,21 @@
       <th   colspan="2"  >Giá tiền: </th>
         <th colspan="8" ><input type="number" ng-model="foodPrice"  value=""></th>
       </tr>
+
+
+
+
       
 
       <tr>
       <th colspan="2" >Hình ảnh:</th>
         <th colspan="8" ><input type="text"  ng-model="foodImage"  value=""></th>
+      </tr>
+
+
+      <tr id="rowFoodDetail" >
+      <th colspan="2" >Chi tiết món ăn:</th>
+        <th colspan="8" ><textarea cols="40" rows="5" ng-model="foodDetail" id="foodDetail"></textarea> </th>
       </tr>
 
 
@@ -127,18 +137,21 @@
         Tên món ăn
       </th>
       <th id="TH_5">
-        Giá
+        Chi tiết món ăn
       </th>
       <th id="TH_6">
-        Loại món ăn
+        Giá
       </th>
       <th id="TH_7">
-        Trạng thái
+        Loại món ăn
       </th>
       <th id="TH_8">
-        Sửa
+        Trạng thái
       </th>
       <th id="TH_9">
+        Sửa
+      </th>
+      <th id="TH_10">
         Xoá
       </th>
     </tr>
@@ -149,6 +162,9 @@
         <div id="DIV_11">
            <a id="A_12"><img width="60" src="{{foodItem.foodImage}}" alt="{{foodItem.foodName}}" id="IMG_13" /></a> <strong id="STRONG_14">{{foodItem.$id}}</strong>
         </div>
+      </td>
+      <td id="TD_18">
+        <span id="SPAN_19">{{foodItem.detail}}</span>
       </td>
       <td id="TD_17">
         <span id="SPAN_18">{{foodItem.foodPrice}}</span>
