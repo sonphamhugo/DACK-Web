@@ -1,0 +1,28 @@
+#Phân công:
+  
+  Thành viên:
+    - Phạm Trung Sơn - 1312495 - pts.seiryu95@gmail.com. Nhóm trưởng.
+    - Nguyễn Thái Sơn - 1312494 - thaisonnguyen8295@gmail.com.
+    - Nguyễn Quốc Thái - 1312542 - nguyenquocthai.hcmus@gmail.com.
+    
+  Phân công:
+    - Giai đoạn 1: Định hướng đồ án: Phụ trách chính Phạm Trung Sơn                                           Deadline: 29/05/2016
+      + Đặc tả yêu cầu cho đồ án.
+      + Lập bảng phân công.
+    - Giai đoạn 2: Thiết kế giao diện:  Phụ trách chính Nguyễn Thái Sơn, Nguyễn Quốc Thái                     Deadline: 01/06/2016
+      + Tìm kiếm tempalte giao diện phù hợp chủ đề đồ án.
+      + Chỉnh sửa và thêm các thứ cần thiết cho phù hợp với chủ đề.
+      + Từ trang web liệt kê các trường dữ liệu cho database.
+      + Hỗ trợ google map để ghi rõ địa chỉ quán ăn.
+    - Giai đoạn 3: Thiết kế database:  Phụ trách chính Nguyễn Thái Sơn, Nguyễn Quốc Thái                      Deadline: 05/06/2016
+      + Dựa vào giai diện thiết kế database phù hợp.
+      + Tự tạo database để test.
+      + Up database lên Firebase.
+      + Đọc dữ liệu từ Firebase vào giao diện trang web
+    - Giai đoạn 4: Hỗ trợ đăng nhập: Phụ trách chính Phạm Trung Sơn                                           Deadline: 08/06/2016
+      + Dùng Firebase hỗ trợ đăng nhập.
+      + Hỗ trợ đăng nhập từ các mạng xã hội chình: Facebook, Twitter, Google.
+      + Kiểm tra ràng buộc đăng nhập
+    - Giai đoạn 5: Test và bug: Phụ trách cả team.                                                            Deadline: 09/06/2016
+      + Test và sửa lỗi.
+      
