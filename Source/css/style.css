@@ -32,7 +32,7 @@ text-decoration:none;
 body {
 	font: 14px/20px  Arial, Helvetica, sans-serif;
 	color:#5f5e4e;
-	background-color: #B2FF59;
+	background-color: #ACCFCC;
 	position:relative;
 	min-width:960px;
 }
@@ -261,14 +261,14 @@ h1 a img {
 	display: inline-block;
 	width: 43px;
 	height: 43px;
-	  color: #B2FF59;
+	  color: #ACCFCC;
 	  font: 24px/43px FontAwesome;
 }
 
 .socials a:first-child:after {
 	  content: '';
 	  font: 24px/43px FontAwesome;
-	  color: #B2FF59;
+	  color: #ACCFCC;
 	  width: 43px;
 	  height: 43px;
 	  text-align: center;
@@ -781,7 +781,7 @@ footer a:hover {
     color: rgb(51, 51, 51);
     height: 105px;
     max-width: 100%;
-    width: 940px;
+    width: 100%;
     perspective-origin: 470px 52.5px;
     transform-origin: 470px 52.5px;
     background: rgb(223, 223, 221) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -876,6 +876,25 @@ footer a:hover {
 }/*#TH_6*/
 
 #TH_7 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    height: 34px;
+    vertical-align: middle;
+    width: 118px;
+    perspective-origin: 59px 17px;
+    transform-origin: 59px 17px;
+    background: rgb(238, 238, 238) none repeat scroll 0% 0% / auto padding-box border-box;
+    border-top: 0px none rgb(51, 51, 51);
+    border-right: 0px none rgb(51, 51, 51);
+    border-bottom: 0px solid rgb(221, 221, 221);
+    border-left: 0px none rgb(51, 51, 51);
+    border-spacing: 1px 1px;
+    font: normal normal bold normal 13px / 18.5714px Arial;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 8px;
+}/*#TH_7*/
+
+#TH_8 {
     box-sizing: border-box;
     color: rgb(51, 51, 51);
     height: 34px;
@@ -992,7 +1011,8 @@ footer a:hover {
     text-align: left;
     border: 0px none rgb(102, 102, 102);
     border-spacing: 1px 1px;
-    font: normal normal bold normal 13px / 18.5714px Arial;
+    margin-top: 15px;
+    font: normal normal bold normal 18px / 28.5714px Arial;
     outline: rgb(102, 102, 102) none 0px;
 }/*#STRONG_14*/
 
@@ -1102,7 +1122,26 @@ footer a:hover {
     padding: 8px;
 }/*#TD_22*/
 
-#DIV_1 {
+
+
+#TD_23 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    height: 68px;
+    text-align: center;
+    vertical-align: middle;
+    width: 118px;
+    perspective-origin: 59px 34px;
+    transform-origin: 59px 34px;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 0px none rgb(51, 51, 51);
+    border-spacing: 1px 1px;
+    font: normal normal normal normal 13px / 18.5714px Arial;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 8px;
+}/*#TD_22*/
+
+#DIV_115 {
     box-sizing: border-box;
     color: rgb(102, 102, 102);
     height: 45px;
@@ -1114,12 +1153,12 @@ footer a:hover {
     margin: 10px -15px 10px;
     outline: rgb(102, 102, 102) none 0px;
     float: right;
-    margin-right: 20px;
+    margin-right: 0px;
     border-top: 1px solid rgb(223, 223, 221);
     border-bottom: 1px solid rgb(223, 223, 221);
     padding-top: 15px;
 }/*#DIV_1*/
-#DIV_2 {
+#DIV_247 {
     box-sizing: border-box;
     color: rgb(102, 102, 102);
     float: left;
@@ -1135,7 +1174,7 @@ footer a:hover {
     padding: 0px 15px;
 }/*#DIV_2*/
 
-#STRONG_3 {
+#STRONG_3zz {
     box-sizing: border-box;
     color: rgb(102, 102, 102);
     text-transform: uppercase;
@@ -1144,33 +1183,33 @@ footer a:hover {
     outline: rgb(102, 102, 102) none 0px;
 }/*#STRONG_3*/
 
-#DIV_4 {
+#DIV_4jh {
     box-sizing: border-box;
     color: rgb(102, 102, 102);
-    float: left;
+    float: right;
     height: 18px;
     min-height: 1px;
     position: relative;
-    text-align: right;
-    width: 155.828px;
+    text-align: center;
+    width: 118px;
     perspective-origin: 77.9063px 9px;
     transform-origin: 77.9063px 9px;
     border: 0px none rgb(102, 102, 102);
     font: normal normal normal normal 13px / 18.5714px Arial;
     outline: rgb(102, 102, 102) none 0px;
-    padding: 0px 15px;
+    padding: 0px 0px;
 }/*#DIV_4*/
 
-#SPAN_5 {
+#SPAN_500 {
     box-sizing: border-box;
     color: rgb(210, 0, 0);
-    text-align: right;
+    text-align: center;
     border: 0px none rgb(210, 0, 0);
     font: normal normal bold normal 13px / 18.5714px Arial;
     outline: rgb(210, 0, 0) none 0px;
-    margin-right: 12px;
+    margin-right: 0px;
 }/*#SPAN_5*/
-#A_1 {
+#A_1m {
     box-sizing: border-box;
     color: rgb(255, 255, 255);
     display: block;
@@ -1183,12 +1222,351 @@ footer a:hover {
     width: 215px;
     perspective-origin: 107.5px 21.5px;
     transform-origin: 107.5px 21.5px;
-    background: rgb(240, 89, 34) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: #ACCFCC none repeat scroll 0% 0% / auto padding-box border-box;
     border: 0px none rgb(255, 255, 255);
     font: normal normal normal normal 22px / 48px 'Myriad Pro';
     outline: rgb(255, 255, 255) none 0px;
     margin-top: 10px;
-    margin-right: 20px;
+    margin-right: 0px;
 }/*#A_1*/
 
+
+
+
+table{
+	width: 100%;
+	height: 90%;
+}
+
+
+.content_input{
+	max-width: 100%;
+	width: 400px;
+	padding-left: 36%;
+	padding-top: 20px;
+	height:200px;
+}
+
+
+
+select{ 
+	float:left;
+	width:100%;
+	height: 100%;
+	min-height: 30px;
+	margin: auto;
+}
+
+#btnAddFood{
+	/*height: 28px;
+	background: #B2FF59;*/
+}
+
+
+.form_input input{
+	height: 25px;
+	width: 100%;
+    float: left;
+}
+
+.foodType input{
+
+	width:20px;
+}
+
+#img_preview{
+
+	height: 100px;
+	width: 100px;
+	float: right;
+
+}
+
+#ft{
+    font-size: 19.3px !important;
+}
+
+
+#cart {
+    background-position: 11px 5px;
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    float: right;
+    height: 35px;
+    width: 148px;
+    perspective-origin: 74px 17.5px;
+    transform-origin: 74px 17.5px;
+    background: rgba(0, 0, 0, 0) url("http://bigmua.com/theme/images/icon-cart-left.png") no-repeat scroll 11px 5px / auto padding-box border-box;
+    border-top: 0px none rgb(51, 51, 51);
+    border-right: 0px none rgb(51, 51, 51);
+    border-bottom: 0px none rgb(51, 51, 51);
+    font: normal normal normal normal 13px / 18.5714px Arial, sans-serif;
+    margin: 35px 0px 0px;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 5px 0px 0px 50px;
+    margin-top: -30px;
+    margin-right: 20px;
+}/*#DIV_1*/
+
+#n {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal normal normal 13px / 18.5714px Arial, sans-serif;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#A_2*/
+
+#STRONG_333 {
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    display: block;
+    float: left;
+    height: 25px;
+    width: 27px;
+    perspective-origin: 13.5px 12.5px;
+    transform-origin: 13.5px 12.5px;
+    background: rgba(0, 0, 0, 0) url("http://bigmua.com/theme/images/icon-cart-bg.png") repeat-x scroll 0% 0% / auto padding-box border-box;
+    border: 0px none rgb(255, 255, 255);
+    border-radius: 0 5px 5px 0;
+    font: normal normal bold normal 13px / 18.5714px Arial, sans-serif;
+    outline: rgb(255, 255, 255) none 0px;
+    padding: 5px 10px 0px;
+}/*#STRONG_3*/
+
+#DIV_417 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    float: left;
+    height: 28px;
+    width: 70px;
+    perspective-origin: 35px 14px;
+    transform-origin: 35px 14px;
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal normal normal 13px / 18.5714px Arial, sans-serif;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 0px 0px 0px 10px;
+}/*#DIV_4*/
+
+#H4_515 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    height: 13px;
+    text-transform: uppercase;
+    width: 60px;
+    perspective-origin: 30px 6.5px;
+    transform-origin: 30px 6.5px;
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal bold normal 12px / 13.2px Arial, sans-serif;
+    margin: 0px;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#H4_5*/
+
+#P_611 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    height: 15px;
+    width: 60px;
+    perspective-origin: 30px 7.5px;
+    transform-origin: 30px 7.5px;
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal normal normal 11px / 15.7143px Arial, sans-serif;
+    margin: 0px;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#P_6*/
+
+#A_712 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal normal normal 11px / 15.7143px Arial, sans-serif;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#A_7*/
+
+/*payment*/
+#FORM_101 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    height: 370px;
+    max-width: 450px;
+    width: 450px;
+    perspective-origin: 225px 185px;
+    transform-origin: 225px 185px;
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal normal normal 14px / normal Arial, Helvetica, sans-serif;
+    margin: 0px;
+    outline: rgb(51, 51, 51) none 0px;
+}
+#LABEL_4090, #LABEL_10090, #LABEL_270090, #LABEL_340090, #LABEL_347090, #LABEL_354090 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    display: block;
+    float: left;
+    height: 21px;
+    max-width: 100%;
+    min-height: 1px;
+    position: relative;
+    text-align: left;
+    width: 159.984px;
+    perspective-origin: 79.9844px 10.5px;
+    transform-origin: 79.9844px 10.5px;
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal bold normal 12px / normal Arial, Helvetica, sans-serif;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 7px 15px 0px;
+}/*#LABEL_4, #LABEL_10, #LABEL_270, #LABEL_340, #LABEL_347, #LABEL_354*/
+
+
+
+
+#DIV_3090, #DIV_9090, #DIV_269090, #DIV_339090, #DIV_346090 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    height: 34px;
+    width: 480px;
+    perspective-origin: 240px 17px;
+    transform-origin: 240px 17px;
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal normal normal 14px / normal Arial, Helvetica, sans-serif;
+    margin: 0px -15px 15px;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#DIV_9, #DIV_269, #DIV_339, #DIV_346*/
+
+#DIV_5090, #DIV_11090, #DIV_271090, #DIV_341090, #DIV_348090 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    float: left;
+    height: 34px;
+    min-height: 1px;
+    position: relative;
+    width: 319.984px;
+    perspective-origin: 159.984px 17px;
+    transform-origin: 159.984px 17px;
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal normal normal 14px / normal Arial, Helvetica, sans-serif;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 0px 15px 0px 0px;
+}/*#DIV_11, #DIV_271, #DIV_341, #DIV_348*/
+
+#INPUT_6090, #INPUT_12090 {
+    color: rgb(85, 85, 85);
+    display: block;
+    height: 21px;
+    max-width: 320px;
+    text-overflow: ellipsis;
+    width: 279px;
+    perspective-origin: 152.484px 17px;
+    transform-origin: 152.484px 17px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 3px 3px 3px 3px !important;
+    font: normal normal normal normal 13px / 18.5714px Arial, Helvetica, sans-serif;
+    outline: rgb(85, 85, 85) none 0px;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}/*#INPUT_12*/
+
+
+#SELECT_272090, #SELECT_342090, #SELECT_349090 {
+    color: rgb(85, 85, 85);
+    display: block;
+    height: 34px;
+    max-width: 320px;
+    width: 304.984px;
+    perspective-origin: 152.484px 17px;
+    transform-origin: 152.484px 17px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 3px 3px 3px 3px;
+    font: normal normal normal normal 13px / normal Arial, Helvetica, sans-serif;
+    outline: rgb(85, 85, 85) none 0px;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}/*#SELECT_272, #SELECT_342, #SELECT_349*/
+
+
+
+
+
+#DIV_353090 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    height: 55px;
+    width: 480px;
+    perspective-origin: 240px 27.5px;
+    transform-origin: 240px 27.5px;
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal normal normal 14px / normal Arial, Helvetica, sans-serif;
+    margin: 0px -15px 15px;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#DIV_353*/
+#DIV_355090 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    float: left;
+    height: 55px;
+    min-height: 1px;
+    position: relative;
+    width: 319.984px;
+    perspective-origin: 159.984px 27.5px;
+    transform-origin: 159.984px 27.5px;
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal normal normal 14px / normal Arial, Helvetica, sans-serif;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 0px 15px 0px 0px;
+}/*#DIV_355*/
+
+#TEXTAREA_356090 {
+    color: rgb(85, 85, 85);
+    display: block;
+    height: 41px;
+    max-width: 320px;
+    width: 279px;
+    perspective-origin: 152.484px 25px;
+    transform-origin: 152.484px 25px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 3px 3px 3px 3px !important;
+    font: normal normal normal normal 13px / 18.5714px Arial, Helvetica, sans-serif;
+    outline: rgb(85, 85, 85) none 0px;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}/*#TEXTAREA_356*/
+
+
+
+
+
+#DIV_361090 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    float: left;
+    height: 36px;
+    min-height: 1px;
+    position: relative;
+    width: 319.984px;
+    perspective-origin: 159.984px 18px;
+    transform-origin: 159.984px 18px;
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal normal normal 14px / normal Arial, Helvetica, sans-serif;
+    margin: 0px 0px 0px 145px;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 0px 15px 0px 0px;
+}/*#DIV_361*/
+
+#BUTTON_363090 {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    height: 36px;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 152.484px;
+    perspective-origin: 76.2344px 18px;
+    transform-origin: 76.2344px 18px;
+    background: #ACCFCC none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 2px 2px 2px 2px;
+    font: normal normal normal normal 13px / 18.5714px Arial, Helvetica, sans-serif;
+    outline: rgb(204, 204, 204) none 0px;
+    padding: 8px 12px;
+}
 

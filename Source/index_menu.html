@@ -3,6 +3,18 @@
      <head>
      <title>Menu</title>
      <meta charset="utf-8">
+         <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
+         <script src="https://cdn.jsdelivr.net/ngstorage/0.3.6/ngStorage.min.js"></script>
+         <link rel="stylesheet" href="css/angular-ui-notification.min.css">
+         <script src="js/angular-ui-notification.min.js"></script> 
+         <!-- Firsebase Manage Food -->     
+     <script src="js/food_manage.js"></script>
+         
      <link rel="icon" href="images/favicon.ico">
      <link rel="shortcut icon" href="images/favicon.ico" />
      <link rel="stylesheet" href="css/touchTouch.css">
@@ -39,7 +51,7 @@
     <![endif]-->
     
      </head>
-     <body  class="">
+     <body  class="" ng-app="Food_Order" ng-controller="FoodManageCtrl">
 
 <!--==============================header=================================-->
   <header> 
@@ -70,6 +82,17 @@
 <div class="clear"></div>
           </div>
       </div>
+      <div id="cart">
+	 <a href="http://bigmua.com/cart" id="nofc"><strong id="STRONG_333">{{$storage.cart}}</strong></a>
+	<div id="DIV_417">
+		<h4 id="H4_515">
+			Giỏ hàng
+		</h4>
+		<p id="P_611">
+			<a href="http://bigmua.com/cart" id="A_712">{{$storage.cart}} sản phẩm</a>
+		</p>
+	</div>
+</div>
 </header>
 
 
@@ -93,10 +116,11 @@
              </div>
              <div class="div-tabs">
               <div  id="tab-1" class="tab-content gallery1">
-                  <div class="grid_3">
-                    <a href="images/big1.jpg" class="gal"><img src="images/page3_img1.jpg" alt="mydata.food.img"><span></span></a>
-                    <div class="col2"><span class="col3"><a href="#">mydata.food.name</a></span> $mydata.food.price</div>
+                  <div class="grid_3" ng-repeat="foodItem in listFood | filter:{isSale:'true', breakfast: 'true'}">
+                    <a href="" class="gal" ng-click="success(listFood.indexOf(foodItem))"><img src="{{foodItem.foodImage}}" alt="{{foodItem.foodName}}" height="187" width="187"><span></span></a>
+                    <div class="col2"><span class="col3"><a href="#">{{foodItem.$id}} </a></span> {{foodItem.foodPrice}}</div>
                   </div>
+<!--
                   <div class="grid_3">
                     <a href="images/big2.jpg" class="gal"><img src="images/page3_img2.jpg" alt=""><span></span></a>
                     <div class="col2"><span class="col3"><a href="#">Phasellus erat </a></span> $ 21.99</div>
@@ -117,24 +141,28 @@
                     <a href="images/big6.jpg" class="gal"><img src="images/page3_img6.jpg" alt=""><span></span></a>
                     <div class="col2"><span class="col3"><a href="#">Holi erat </a></span> $ 20.99</div>
                   </div>
+-->
               </div>
               <div  id="tab-2" class="tab-content gallery2">
                  
                   <div class="clear"></div>
-                  <div class="grid_3">
-                    <a href="images/big5.jpg" class="gal"><img src="images/page3_img5.jpg" alt=""><span></span></a>
-                    <div class="col2"><span class="col3"><a href="#">Destro fetolis </a></span> $ 10.99</div>
+                  <div class="grid_3" ng-repeat="foodItem in listFood | filter:{isSale:'true', luch: 'true'}">
+                    <a href="" class="gal" ng-click="success(listFood.indexOf(foodItem))"><img src="{{foodItem.foodImage}}" alt="" height="187" width="187"><span></span></a>
+                    <div class="col2"><span class="col3"><a href="#">{{foodItem.$id}} </a></span> {{foodItem.foodPrice}}</div>
                   </div>
+<!--
                   <div class="grid_3">
                     <a href="images/big6.jpg" class="gal"><img src="images/page3_img6.jpg" alt=""><span></span></a>
                     <div class="col2"><span class="col3"><a href="#">Holi erat </a></span> $ 20.99</div>
                   </div>
+-->
               </div>
               <div  id="tab-3" class="tab-content gallery3">
-                  <div class="grid_3">
-                    <a href="images/big1.jpg" class="gal"><img src="images/page3_img1.jpg" alt=""><span></span></a>
-                    <div class="col2"><span class="col3"><a href="#">Cras facilisis</a></span> $ 19.99</div>
+                  <div class="grid_3" ng-repeat="foodItem in listFood | filter:{isSale:'true', dinner: 'true'}">
+                    <a href="" class="gal" ng-click="success(listFood.indexOf(foodItem))"><img src="{{foodItem.foodImage}}" alt="" height="187" width="187"><span></span></a>
+                    <div class="col2"><span class="col3"><a href="#">{{foodItem.$id}}</a></span> {{foodItem.foodPrice}}</div>
                   </div>
+<!--
                   <div class="grid_3">
                     <a href="images/big2.jpg" class="gal"><img src="images/page3_img2.jpg" alt=""><span></span></a>
                     <div class="col2"><span class="col3"><a href="#">Phasellus erat </a></span> $ 21.99</div>
@@ -147,6 +175,7 @@
                     <a href="images/big4.jpg" class="gal"><img src="images/page3_img4.jpg" alt=""><span></span></a>
                     <div class="col2"><span class="col3"><a href="#">Dert facilis</a></span> $ 25.30</div>
                   </div>
+-->
                  
               </div>
               <div  id="tab-4" class="tab-content gallery4">
