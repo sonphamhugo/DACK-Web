@@ -8,17 +8,32 @@
 // update food to firebase
 // remove food from firebase
 
-var app = angular.module("Food_Order", ["firebase"]);
-app.controller("FoodManageCtrl", function($scope, $firebaseArray) {
+var app = angular.module("Food_Order", ["firebase", "ui-notification", "ngStorage"]);
+//app.factory('countOfcart', function() {
+//    return {
+//        num : 0
+//    };
+//});
+app.controller("FoodManageCtrl", function($scope, $firebaseArray, Notification, $localStorage) {
   var ref = new Firebase("https://testfoodorder.firebaseio.com/Store/Foods/");
   $scope.listFood = $firebaseArray(ref);
-
+    //$localStorage.$reset();
+    $scope.$storage = $localStorage.$default({cart: 0});
+    $scope.$storage = $localStorage.$default({cp: []});
   $scope.listFood.$loaded()
       .then(function() {
-    console.log($scope.listFood);
+    if($scope.$storage.cp.length === 0)
+    {   angular.copy($scope.listFood, $scope.$storage.cp);
+        angular.forEach($scope.$storage.cp, function(value, key){
+            //console.log(key + ': ' + value.Name);
+            value.isSale = 0;
+        });
+    console.log($scope.$storage.cp); 
+    }
+    
+      
    });
-
-
+    //$localStorage.$reset();
   $scope.typeBreakfast = false;
   $scope.typeLunch = false;
   $scope.typeDinner = false;
@@ -147,6 +162,40 @@ app.controller("FoodManageCtrl", function($scope, $firebaseArray) {
   }
 
   // putting a console.log here won't work, see below
+  
+  //add to cart
+    $scope.success = function(id) {        
+        $scope.$storage.cart++;
+        $scope.$storage.cp[id].isSale = $scope.$storage.cart;
+        //console.log($scope.$storage.cp);
+        Notification.info({message: 'Đã thêm vào giỏ hàng!', delay: 1500});
+    };
+    // change count of cart
+    $scope.change1 = function(id) {
+		
+		if(!isFinite($scope.$storage.cart))
+			Notification.error({message: "Giá trị ở ô Số thứ nhât không phải là số", delay: 2000});
+		else
+            {
+			     
+                  $scope.$storage.cp[id].isSale = $scope.$storage.cart;              
+            }
+		
+		if(angular.isUndefined($scope.$storage.cart))
+            Notification.error({message: "Chưa nhập giá trị ô Số thứ nhất", delay: 2000});	
+	};
+    //sum
+    $scope.sum = function() {
+        var sumt = 0;
+        angular.forEach($scope.$storage.cp, function(value, key){
+            //console.log(key + ': ' + value.Name);
+            if(value.isSale > 0)
+            {
+                sumt = sumt + (value.foodPrice*value.isSale);
+            }
+        });
+        return sumt;
+    }
  });
 
 
