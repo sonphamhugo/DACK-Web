@@ -3,6 +3,18 @@
      <head>
      <title>Reservation</title>
      <meta charset="utf-8">
+         <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>   
+     
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/ngstorage/0.3.6/ngStorage.min.js"></script> 
+<link rel="stylesheet" href="css/angular-ui-notification.min.css">
+         <script src="js/angular-ui-notification.min.js"></script>
+         <!-- Firsebase Manage Food -->     
+     <script src="js/food_manage.js"></script>
      <link rel="icon" href="images/favicon.ico">
      <link rel="shortcut icon" href="images/favicon.ico" />
      <link rel="stylesheet" href="css/style.css">
@@ -34,7 +46,7 @@
     <![endif]-->
     
      </head>
-     <body  class="">
+     <body  class="" ng-app="Food_Order" ng-controller="FoodManageCtrl">
 
 <!--==============================header=================================-->
   <header> 
@@ -75,7 +87,7 @@
 	<thead id="THEAD_2">
 		<tr id="TR_3">
 			<th id="TH_4">
-				Tên sản phẩm
+				Tên món
 			</th>
 			<th id="TH_5">
 				Giá
@@ -89,35 +101,36 @@
 		</tr>
 	</thead>
 	<tbody id="TBODY_8">
-		<tr id="TR_9">
+		<tr id="TR_9" ng-repeat="foodItem in $storage.cp">
 			<td id="TD_10">
 				<div id="DIV_11">
-					 <a id="A_12"><img width="60" src="http://admin.bigmua.com/public/media/media/thumb/2016-05-23/voi-xit-da-nang-6.jpg" alt="Vòi xịt rửa xe đa năng 7m giãn nở 22.5m" id="IMG_13" /></a> <strong id="STRONG_14">Cơm sườn xào chua ngọt</strong>
+					 <a id="A_12"><img width="60" src="{{foodItem.foodImage}}" alt="Vòi xịt rửa xe đa năng 7m giãn nở 22.5m" id="IMG_13" /></a> <strong id="STRONG_14">{{foodItem.$id}}</strong>
 				</div>
 				<input type="hidden" name="price_1" value="175000" id="INPUT_15" />
 				<input type="hidden" name="id_1" value="148144" id="INPUT_16" />
 			</td>
 			<td id="TD_17">
-				<span id="SPAN_18">175,000đ</span>
+				<span id="SPAN_18">{{foodItem.foodPrice}}đ</span>
 			</td>
 			<td id="TD_19">
-				<input type="text" value="1" name="number_1" id="INPUT_20" /> <a id="A_21">Bỏ sản phẩm</a>
+                
+				<input type="text" id="INPUT_20" ng-model="$storage.cart" ng-change="change1($storage.cp.indexOf(foodItem))"/> <a id="A_21">Bỏ sản phẩm</a>
 			</td>
 			<td id="TD_22">
-				<span id="SPAN_23">175,000đ</span>
+				<span id="SPAN_23">{{foodItem.foodPrice * foodItem.isSale}}đ</span>
 			</td>
 		</tr>
 	</tbody>
 </table>
-    <div id="DIV_1">
-	<div id="DIV_2">
-		 <strong id="STRONG_3">Thành tiền</strong>
+    <div id="DIV_115">
+	<div id="DIV_247">
+		 <strong id="STRONG_3zz">Thành tiền</strong>
 	</div>
-	<div id="DIV_4">
-		 <span id="SPAN_5">350,000đ</span>
+	<div id="DIV_4jh">
+		 <span id="SPAN_500">{{sum()}}đ</span>
 	</div>
 </div>
-<a href="#" id="A_1">Thanh toán</a>
+<a href="index_payment.html" id="A_1m">Thanh toán</a>
   </div>
 </div>
 

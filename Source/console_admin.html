@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+     <title>Home</title>
+     <meta charset="utf-8">
+
+
+     <!-- AngularJS -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+<!-- Firebase -->
+<script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+<!-- AngularFire -->
+<script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
+
+
+    <!-- Firsebase Manage Food -->     
+     <script src="js/food_manage.js"></script>
+
+      <link rel="icon" href="images/favicon.ico">
+     <link rel="shortcut icon" href="images/favicon.ico" />
+     <link rel="stylesheet" href="css/style.css">
+     <script src="js/jquery.js"></script>
+     
+     <script src="js/jquery-migrate-1.1.1.js"></script>
+     <script src="js/jquery.equalheights.js"></script>
+     <script src="js/jquery.ui.totop.js"></script>
+     <script src="js/jquery.easing.1.3.js"></script>
+
+
+
+
+
+     <script>
+        $(document).ready(function(){
+          $( ".block1" ).mouseover(function() {
+            $(this).addClass( "blur" );
+          });
+          $( ".block1" ).mouseout(function() {
+            $(this).removeClass( "blur" );
+          });
+          $().UItoTop({ easingType: 'easeOutQuart' });
+        }) 
+     </script>
+   
+    
+     </head>
+     <body class="page1" ng-app="Food_Order">
+
+<!--==============================header=================================-->
+ <header> 
+  <div class="container_12">
+   <div class="grid_12"> 
+   
+    <h1><a href="index.html"><img src="images/logo.png" alt="Boo House"></a> </h1>
+    <div class="menu_block">
+
+
+ <div class="clear"></div>
+</div>
+<div class="clear"></div>
+          </div>
+      </div>
+</header>
+
+<!--==============================Content=================================-->
+
+<div class="content" ng-controller="FoodManageCtrl">
+
+
+
+
+<div class="content_input">
+  <table class="form_input">
+    <tr>
+        <th  colspan="2" >Tên món ăn:</th>
+        <td colspan="8" >  <input type="text" ng-model="foodName" value=""></td>
+    </tr>
+      
+      <tr class="foodType">
+        <th  colspan="2" >Loại</th>
+        <td colspan="2" >
+        <input type="checkbox"  ng-checked="{{typeBreakfast}}==true" ng-model="typeBreakfast">Sáng
+        </td>
+        <td colspan="2" >
+        <input type="checkbox" ng-checked="{{typeLunch}}==true" ng-model="typeLunch">Trưa
+        </td>
+        <td colspan="2" >
+        <input type="checkbox"  ng-checked="{{typeDinner}}==true"  ng-model="typeDinner">Tối
+        </td>
+        <td colspan="2" >
+        <input type="checkbox"  ng-checked="{{isSale}}==true" ng-model="isSale" >Có bán
+        </td>
+      </tr>
+      
+
+      <tr>
+      <th   colspan="2"  >Giá tiền: </th>
+        <th colspan="8" ><input type="number" ng-model="foodPrice"  value=""></th>
+      </tr>
+      
+
+      <tr>
+      <th colspan="2" >Hình ảnh:</th>
+        <th colspan="8" ><input type="text"  ng-model="foodImage"  value=""></th>
+      </tr>
+
+
+      <tr>
+        <th colspan="10" align="right"><button id="btnAddFood" ng-click="addFood()">Thêm món ăn</button></th>
+      </tr>
+      
+     
+     </table>
+
+  <!--    <images id="img_preview" ng-src="http://unuquan.com/wp-content/uploads/2012/12/Ca-tre-chien-cham-mam-gung-1.jpg"></images> -->
+
+
+
+</div>
+
+ 
+
+ <table id="TABLE_1">
+  <thead id="THEAD_2">
+    <tr id="TR_3">
+      <th id="TH_4">
+        Tên món ăn
+      </th>
+      <th id="TH_5">
+        Giá
+      </th>
+      <th id="TH_6">
+        Loại món ăn
+      </th>
+      <th id="TH_7">
+        Trạng thái
+      </th>
+      <th id="TH_8">
+        Sửa
+      </th>
+      <th id="TH_9">
+        Xoá
+      </th>
+    </tr>
+  </thead>
+  <tbody id="TBODY_8" ng-repeat="foodItem in listFood">
+    <tr id="TR_9">
+      <td id="TD_10">
+        <div id="DIV_11">
+           <a id="A_12"><img width="60" src="{{foodItem.foodImage}}" alt="{{foodItem.foodName}}" id="IMG_13" /></a> <strong id="STRONG_14">{{foodItem.$id}}</strong>
+        </div>
+      </td>
+      <td id="TD_17">
+        <span id="SPAN_18">{{foodItem.foodPrice}}</span>
+      </td>
+      <td id="TD_19">
+       
+        <span id="SPAN_23">{{getFoodType(foodItem)}}</span>
+      </td>
+      <td id="TD_22">
+        <span> {{getFoodState(foodItem)}}</span>
+      </td>
+
+      <td id="TD_23">
+        <button ng-click="updateFood(foodItem)">Sửa</button>
+      </td>
+
+
+      <td id="TD_23">
+        <button ng-click="removeFood(foodItem)">Xoá</button>
+      </td>
+
+
+
+    </tr>
+  </tbody>
+</table>
+
+
+</div>
+
+<!--==============================footer=================================-->
+
+<footer>    
+  <div class="container_12">
+    <div class="grid_6 prefix_3">
+      <a href="index.html" class="f_logo"><img src="images/f_logo.png" alt=""></a>
+      <div class="copy">
+      &copy; 2013 | <a href="#">Privacy Policy</a> <br> Trang wen thiết kế bởi<a href="http://www.templatemonster.com/" rel="nofollow">Deadline </a>
+      </div>
+    </div>
+  </div>
+</footer>
+     <script>
+      $(document).ready(function(){ 
+         $(".bt-menu-trigger").toggle( 
+          function(){
+            $('.bt-menu').addClass('bt-menu-open'); 
+          }, 
+          function(){
+            $('.bt-menu').removeClass('bt-menu-open'); 
+          } 
+        ); 
+      }) 
+    </script>
+</body>
+</html>
